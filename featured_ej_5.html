@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    
+    <style>
+        div {
+            margin: 5px;
+        }
+
+        .submit_button {
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(11, 138, 11);
+            height: 30px;
+            color: white;
+            font-weight: bold;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <div class="nombre">
+            <label for="nombre">Nombre</label> 
+            <input type="text" id="nombre" name="nombre">
+        </div>
+
+        <div class="apellido">
+            <label for="apellidos">Apellidos</label> 
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+               
+        <div class="edad">    
+            <label for="edad">Edad</label> 
+            <input type="number" id="edad" name="edad">
+        </div>
+        
+        <div class="telefono">    
+            <label for="telefono">Número de teléfono</label> 
+            <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div class="email">    
+            <label for="email">Email</label> 
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="aficiones">    
+            <label for="aficiones">Aficiones</label> 
+            <input type="text" id="aficiones" name="aficiones">
+        </div>
+
+        <div class="presentacion">    
+            <label for="presentacion">Breve presentación</label> 
+            <input type="text" id="presentacion" name="aficipresentacionones">
+        </div>
+
+        <div class="imagen">    
+            <label for="imagen">Foto de perfil</label>
+            <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                <input type="file" name="imagen" />
+                </form>
+        </div>
+
+        <div class="newsletter">  
+            <label for="checkbox">Suscribirse al Newsletter</label>  
+            <input type="checkbox" name="checkbox" value="ok">
+        </div>
+
+        <div class="submit">  
+            <button class="submit_button" type="button" name="submit" onclick="alert('Formulario enviado!')"> 
+                Enviar
+            </button>
+        </div>
+
+    </form>
+</body>
+</html>

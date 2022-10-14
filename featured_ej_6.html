@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+        #renglon_1 {
+            width: 60px;
+            height: 10px;
+            background-color: rgb(2, 97, 2);
+            border-radius: 10px 10px 0px 0px;
+        }
+        #renglon_2 {
+            width: 90px;
+            height: 10px;
+            background-color: rgb(2, 97, 2);
+        }
+        #renglon_3 {
+            display: flex;
+            flex-direction: column;
+            width: 120px;
+            height: 160px;
+            background-color: rgb(2, 97, 2);
+            align-items: center;
+        }
+        #rojo {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50px;
+            margin: 5px 0px;
+            }
+        #amarillo {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            border-radius: 50px;
+            margin: 5px 0px;
+        }
+        #verde {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(0, 255, 85);
+            border-radius: 50px;
+            margin: 5px 0px;
+        }
+        #renglon_4 {
+            width: 12px;
+            height: 120px;
+            background-color: rgb(2, 97, 2);
+            }
+        #renglon_5 {
+            width: 100px;
+            height: 12px;
+            background-color: rgb(2, 97, 2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p id="renglon_1"></p>
+        <p id="renglon_2"></p>
+        <div id="renglon_3">
+            <p id="rojo"></p>
+            <p id="amarillo"></p>
+            <p id="verde"></p>
+        </div>
+        <p id="renglon_4"></p>
+        <p id="renglon_5"></p>
+    </div>
+
+</body>
+</html>
